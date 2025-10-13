@@ -1,4 +1,4 @@
-# ESP-Align
+# ESP-Align🧬
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
@@ -107,8 +107,6 @@ ESP-Align outperforms sequence-, structure-, and embedding-based methods across 
 * **UDG-like domain**: Accurate alignment of critical residues and secondary-structure elements.
 * **β-trefoil MIR domain**: Correctly handles long insertions and structural variations.
 
-Refer to `docs/figures` for example alignment visualizations.
-
 ---
 
 ## 📂 Repository Structure
@@ -119,13 +117,10 @@ ESP-Align/
 ├── LICENSE
 ├── requirements.txt
 ├── esp_align/        # Source code modules
-├── tree_construction/# Source code modules
 ├── scripts/          # Command-line scripts
 ├── examples/         # Example data
 ├── Benchmarks/       # Benchmark datasets (subset)
-├── Bench_results/    # Benchmark outputs
-├── docs/             # Documentation and figures
-└── tests/            # Unit tests
+└── Bench_results/    # Benchmark outputs
 ```
 
 ---
@@ -134,10 +129,9 @@ ESP-Align/
 
 If you use ESP-Align in your research, please cite:
 
-> Liu S., Lei T., Li Y., Zhao W., Chen Y., He H., Zhang J., Chen J.
-> ESP-Align: a structure-aware sequence alignment method integrating ESM-2 embeddings and secondary structure. *Briefings in Bioinformatics*, 2025.
-
----
+Liu S., Lei T., Li Y., Zhao W., Chen Y., He H., Zhang J., Chen J., Zeng H
+ESP-Align: a structure-aware sequence alignment method integrating ESM-2 embeddings and secondary structure. 
+Briefings in Bioinformatics, **submitted**, 2025.
 
 ## ⚖️ License
 

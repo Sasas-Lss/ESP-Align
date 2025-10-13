@@ -1,6 +1,4 @@
 # ESP-Align
-A novel, structure-aware sequence alignment tool that integrates sequence embeddings with structural context, providing both methodological innovation and broad applicability to protein sequence comparison, function inference, and evolutionary analysis. 
-# ESP-Align
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()

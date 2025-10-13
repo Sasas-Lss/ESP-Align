@@ -1,7 +1,7 @@
 # ESP-Align🧬
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
+[![License](https://github.com/Sasas-Lss/ESP-Align/blob/main/LICENSE)]()
 
 **ESP-Align** is a structure-aware protein sequence alignment tool that integrates **ESM-2 embeddings** with predicted secondary structure to achieve robust alignment performance, even in low sequence identity scenarios. It also supports construction of **similarity-derived phylogenetic trees** for intuitive visualization of protein relationships.
 

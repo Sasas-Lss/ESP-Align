@@ -33,34 +33,61 @@ Install dependencies (Python 3.7+ recommended):
 pip install -r requirements.txt
 ```
 
-Optional: install as a package:
-
-```bash
-python setup.py install
-```
-
 ---
 
-## 💻 Usage
+### 💻 Usage
 
-### 1. Pairwise alignment
-
-```bash
-python scripts/run_alignment.py --input data/test_sequences.fasta --method ESP-Align --output results/alignments/
-```
-
-* `--input`: Input FASTA file
-* `--method`: Alignment method (`ESP-Align`, `E-score`, `NW-BLOSUM`)
-* `--output`: Output directory for alignments
-
-### 2. Construct similarity-derived phylogenetic trees
+### 1. Pairwise alignment using ESP-Align or other methods
 
 ```bash
-python scripts/build_tree.py --input results/alignments/ --output results/trees/
+python esp_align/ESP_Align.py \
+    --seqs_path test_sequences.fasta \
+    --pdb_path pdb_files/ \
+    --result_dir results/alignments/
 ```
 
-* Generates distance matrix and phylogenetic tree (Newick format).
-* Supports visualization of protein clusters.
+**Arguments:**
+
+* `--seqs_path`: Path to the input FASTA file containing sequences.
+* `--pdb_path`: Path to the PDB files (leave blank to use ESMFold predictions).
+* `--result_dir`: Directory to save the alignment results.
+
+
+**Example: Pairwise alignment of UDG-like domains**
+
+
+```bash
+python esp_align/ESP_Align.py \
+    --seqs_path examples/Case_Studies/UDG-like/UDG_TDG.fasta \
+    --result_dir results/Case_Studies/UDG-like/
+```
+---
+
+### 2. Generating similarity-derived phylogenetic trees
+
+```bash
+python esp_align/ESP_Align_tree.py \
+    -i test_sequences.fasta \
+    -p pdb_files/ \
+    -o results/phylogenetic_tree.nwk
+```
+
+**Arguments:**
+
+* `-i / --input`: Path to the input FASTA file containing protein sequences.
+* `-p / --pdb_path`: Path to the PDB files. Leave blank to automatically use ESMFold for structure prediction.
+* `-o / --output_tree`: Path to save the output phylogenetic tree in Newick format.
+
+**Example:**
+
+```bash
+python esp_align/ESP_Align_tree.py \
+    -i data/test_sequences.fasta \
+    -p "" \
+    -o results/p53_family_tree.nwk
+```
+
+> In this example, no PDB files are provided, so ESP‑Align will use ESMFold predictions to generate the similarity-derived tree.
 
 ---
 
@@ -91,12 +118,12 @@ ESP-Align/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
-├── setup.py
 ├── esp_align/        # Source code modules
+├── tree_construction/# Source code modules
 ├── scripts/          # Command-line scripts
-├── data/             # Example input sequences
-├── benchmarks/       # Benchmark datasets (subset)
-├── results/          # Example outputs
+├── examples/         # Example data
+├── Benchmarks/       # Benchmark datasets (subset)
+├── Bench_results/    # Benchmark outputs
 ├── docs/             # Documentation and figures
 └── tests/            # Unit tests
 ```

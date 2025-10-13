@@ -130,6 +130,7 @@ ESP-Align/
 If you use ESP-Align in your research, please cite:
 
 Liu S., Lei T., Li Y., Zhao W., Chen Y., He H., Zhang J., Chen J., Zeng H
+
 ESP-Align: a structure-aware sequence alignment method integrating ESM-2 embeddings and secondary structure. 
 Briefings in Bioinformatics, **submitted**, 2025.
 

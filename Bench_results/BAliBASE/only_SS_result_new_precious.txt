@@ -1,0 +1,10 @@
+### RV11 average scores -> F1: 0.4381, Precision: 0.4468, Recall: 0.4302
+
+### RV12 average scores -> F1: 0.6845, Precision: 0.6953, Recall: 0.6743
+
+### RV911 average scores -> F1: 0.2705, Precision: 0.2736, Recall: 0.2692
+
+### RV912 average scores -> F1: 0.5534, Precision: 0.5639, Recall: 0.5441
+
+### RV913 average scores -> F1: 0.7375, Precision: 0.7481, Recall: 0.7275
+

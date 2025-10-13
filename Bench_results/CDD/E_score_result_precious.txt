@@ -1,0 +1,8 @@
+### CDD_Tier1 average scores -> F1: 0.6084, Precision: 0.5993, Recall: 0.6188
+
+### CDD_Tier2 average scores -> F1: 0.8676, Precision: 0.8649, Recall: 0.8706
+
+### CDD_Tier3 average scores -> F1: 0.9466, Precision: 0.9461, Recall: 0.9471
+
+### CDD_Tier4 average scores -> F1: 0.9770, Precision: 0.9767, Recall: 0.9773
+

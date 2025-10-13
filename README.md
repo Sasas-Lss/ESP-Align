@@ -1,11 +1,5 @@
 # ESP-Align
 A novel, structure-aware sequence alignment tool that integrates sequence embeddings with structural context, providing both methodological innovation and broad applicability to protein sequence comparison, function inference, and evolutionary analysis. 
-
-好的，我帮你写一个 **科研工具投稿用的 README.md 示例**，针对 ESP-Align，结构清晰、简洁且符合 GitHub 规范，同时适合投稿论文时附带仓库。
-
----
-
-````markdown
 # ESP-Align
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)]()
@@ -131,12 +125,3 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 * **ESM-2**: Facebook AI Research protein language model
 * **PyTorch**, **Biopython**, **ESMFold**
 * Benchmark datasets: **BAliBASE**, **CDD**
-
-```
-
----
-
-如果你愿意，我可以帮你再写一个 **简化版的快速上手指南**，用于 GitHub 首页显示，并直接配合论文 Figure 1 的流程图，这样一眼就能看懂工具功能。  
-
-你希望我写吗？
-```

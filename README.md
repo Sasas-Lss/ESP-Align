@@ -39,7 +39,7 @@ Download and compile following the official instructions:
 
 ```bash
 wget http://webclu.bio.wzw.tum.de/stride/stride.tar.gz
-tar -xzf stride.tar.gz
+tar -xzf stride.tar.gz -C ./stride
 cd stride
 make
 ```

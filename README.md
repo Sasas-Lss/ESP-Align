@@ -133,8 +133,8 @@ python esp_align/ESP_Align_tree.py \
 
 ```bash
 python esp_align/ESP_Align_tree.py \
-    -i examples/Tree Construction/ \
-    -p examples/Tree Construction/Structure \
+    -i examples/Tree_Construction/20_protein_sequences.fasta \
+    -p examples/Tree_Construction/Structure \
     -o results/similarity_tree.nwk
 ```
 

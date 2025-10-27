@@ -75,30 +75,43 @@ pip install -r requirements.txt
 
 ### 💻 Usage
 
-### 1. Pairwise alignment using ESP-Align or other methods
+### 1. Pairwise alignment using ESP-Align
 
 ```bash
 python esp_align/ESP_Align.py \
-    --seqs_path test_sequences.fasta \
-    --pdb_path pdb_files/ \
-    --result_dir results/alignments/
+    -i test_sequences.fasta \
+    -p pdb_files/ \
+    -o results/alignments/
 ```
 
 **Arguments:**
 
-* `--seqs_path`: Path to the input FASTA file containing sequences.
-* `--pdb_path`: Path to the PDB files (leave blank to use ESMFold predictions).
-* `--result_dir`: Directory to save the alignment results.
+* `-i / --input`: Path to the input FASTA file containing sequences.
+* `-p / --pdb_path`: Path to the PDB files (leave blank to use ESMFold predictions).
+* `-o / --output`: Directory to save the alignment results.
 
+**Optional parameters (with default values):**
+
+* `--pearson_weight`: Weight for Pearson similarity (default: `0.8`).
+* `--Helix`: Score adjustment for helix structure (default: `-5.0`).
+* `--Strand`: Score adjustment for strand structure (default: `-3.0`).
+* `--Coil`: Score adjustment for coil structure (default: `-1.0`).
+* `--gap_ext`: Gap extension penalty (default: `0.0`).
+
+---
 
 **Example: Pairwise alignment of UDG-like domains**
 
-
 ```bash
 python esp_align/ESP_Align.py \
-    --seqs_path examples/Case_Studies/UDG-like/UDG_TDG.fasta \
-    --result_dir results/Case_Studies/UDG-like/
+    -i examples/Case_Studies/UDG-like/UDG_TDG.fasta \
+    -o results/Case_Studies/UDG-like/ \
+    --pearson_weight 0.8 \
+    --Helix -5.0 
 ```
+
+> In this example, ESP-Align performs a structure-aware pairwise alignment using user-defined weights for embedding and structural components.
+
 ---
 
 ### 2. Generating similarity-derived phylogenetic trees

@@ -133,9 +133,9 @@ python esp_align/ESP_Align_tree.py \
 
 ```bash
 python esp_align/ESP_Align_tree.py \
-    -i data/test_sequences.fasta \
-    -p "" \
-    -o results/p53_family_tree.nwk
+    -i examples/Tree Construction/ \
+    -p examples/Tree Construction/Structure \
+    -o results/similarity_tree.nwk
 ```
 
 > In this example, no PDB files are provided, so ESP‑Align will use ESMFold predictions to generate the similarity-derived tree.

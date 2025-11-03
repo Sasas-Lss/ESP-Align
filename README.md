@@ -89,11 +89,13 @@ pip install -r requirements.txt
 
 ### 1. Pairwise alignment using ESP-Align
 
+Use the following command format to run pairwise alignment with **ESP-Align**:
+
 ```bash
 python esp_align/ESP_Align.py \
-    -i test_sequences.fasta \
-    -p pdb_files/ \
-    -o results/alignments/
+    -i <input_fasta> \
+    -p <pdb_directory> \
+    -o <output_directory>
 ```
 
 **Arguments:**
@@ -101,6 +103,7 @@ python esp_align/ESP_Align.py \
 * `-i / --input`: Path to the input FASTA file containing sequences.
 * `-p / --pdb_path`: Path to the PDB files (leave blank to use ESMFold predictions).
 * `-o / --output`: Directory to save the alignment results.
+* `-h / --help`: Show the full list of available options and exit.
 
 **Optional parameters (with default values):**
 
@@ -127,12 +130,13 @@ python esp_align/ESP_Align.py \
 ---
 
 ### 2. Generating similarity-derived phylogenetic trees
+Use the following command to generate a phylogenetic tree based on **structure-aware sequence similarity**:
 
 ```bash
 python esp_align/ESP_Align_tree.py \
-    -i test_sequences.fasta \
-    -p pdb_files/ \
-    -o results/phylogenetic_tree.nwk
+    -i <input_fasta> \
+    -p <pdb_directory> \
+    -o <output_tree_file>
 ```
 
 **Arguments:**
@@ -140,6 +144,7 @@ python esp_align/ESP_Align_tree.py \
 * `-i / --input`: Path to the input FASTA file containing protein sequences.
 * `-p / --pdb_path`: Path to the PDB files. Leave blank to automatically use ESMFold for structure prediction.
 * `-o / --output_tree`: Path to save the output phylogenetic tree in Newick format.
+* `-h / --help`: Show the full list of available options and exit.
 
 **Example:**
 

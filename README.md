@@ -21,7 +21,7 @@
 
 ### 🔧 External Dependencies
 
-**ESP-Align** relies on two external tools for **embedding extraction** and **secondary structure analysis**:
+**ESP-Align** relies on two external tools for **embedding extraction** and **structure information analysis**:
 
 
 #### 🧠 ESM (Evolutionary Scale Modeling)
@@ -30,6 +30,12 @@ Used for **protein embedding extraction** and **structure prediction** (via **ES
 For detailed installation and model setup instructions, please refer to the official repository:
 👉 [https://github.com/facebookresearch/esm/tree/main](https://github.com/facebookresearch/esm/tree/main)
 
+After installation, verify that ESMFold is correctly configured and globally accessible by running:
+
+```bash
+esmfold -h
+```
+If the command displays the help information, it indicates that ESMFold can be executed from any working directory.
 
 #### 🧩 Stride
 
@@ -51,6 +57,12 @@ Ensure `stride` is available in your system `PATH`:
 echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
 source ~/.bashrc
 ```
+After installation, confirm that Stride is globally available by running:
+
+```bash
+stride -h
+```
+If the command outputs the usage information, Stride has been correctly added to your system PATH.
 
 > ⚠️ **ESP-Align** automatically calls **ESM-2/ESMFold** for structure prediction when no PDB files are provided, and **Stride** for extracting secondary structure features.
 

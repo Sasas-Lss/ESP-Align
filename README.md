@@ -4,14 +4,14 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/Sasas-Lss/ESP-Align/blob/main/LICENSE)
 
 
-**ESP-Align** is a structure-aware protein sequence alignment tool that integrates **ESM-2 embeddings** with predicted secondary structure to achieve robust alignment performance, even in low sequence identity scenarios. It also supports construction of **similarity-derived phylogenetic trees** for intuitive visualization of protein relationships.
+**ESP-Align** is a structure-aware protein sequence alignment tool that integrates **protein language model embeddings** with  **protein structure information** to achieve robust alignment performance, even in low sequence identity scenarios. It also supports construction of **similarity-derived phylogenetic trees** for intuitive visualization of protein relationships.
 
 ---
 
 ## 📌 Features
 
 - Structure-aware global sequence alignment using a modified Needleman-Wunsch algorithm.
-- Combines **embedding-based similarity** (from ESM-2) and **structural information** for accurate residue alignment.
+- Combines **embedding-based similarity** and **structural information** for accurate residue alignment.
 - Handles long insertions and low sequence identity (“twilight zone”, 20–35%).
 - Generates **normalized similarity scores** for quantitative protein comparison.
 - Supports **similarity-derived phylogenetic tree** construction.

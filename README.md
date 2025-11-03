@@ -100,7 +100,7 @@ python esp_align/ESP_Align.py \
 
 **Arguments:**
 
-* `-i / --input`: Path to the input FASTA file containing sequences.
+* `-i / --input`: Path to the input FASTA file containing two protein sequences to be aligned.
 * `-p / --pdb_path`: Path to the PDB files.
 
   
@@ -145,7 +145,7 @@ python esp_align/ESP_Align_tree.py \
 
 **Arguments:**
 
-* `-i / --input`: Path to the input FASTA file containing protein sequences.
+* `-i / --input`: Path to the input FASTA file containing protein sequences used for tree construction.
 * `-p / --pdb_path`: Path to the PDB files. Leave blank to automatically use ESMFold for structure prediction.
 
   > **Note:** File names should be consistent with sequence IDs in the FASTA file (e.g., `proteinA.pdb` for `proteinA` in FASTA).

@@ -190,7 +190,7 @@ ESP-Align/
 
 ## 📄 Citation
 
-I will publish it in futrue!
+ESP-Align: a structure-aware sequence alignment method integrating protein language model embeddings and structure information.(Submitted).
 
 ## ⚖️ License
 

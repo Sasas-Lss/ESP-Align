@@ -33,7 +33,7 @@ For detailed installation and model setup instructions, please refer to the offi
 After installation, verify that ESMFold is correctly configured and globally accessible by running:
 
 ```bash
-esmfold -h
+esm-fold -h
 ```
 If the command displays the help information, it indicates that ESMFold can be executed from any working directory.
 

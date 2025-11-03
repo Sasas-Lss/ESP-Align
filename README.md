@@ -116,7 +116,7 @@ python esp_align/ESP_Align.py \
 
 ```bash
 python esp_align/ESP_Align.py \
-    -i ./examples/Case_Studies/UDG-like/UDG_TDG.fasta \
+    -i ./examples/Case_Studies/UDG-like/UDG-like.fasta \
     -o ./results/Case_Studies/UDG-like/ \
     --pearson_weight 0.8 \
     --Helix -5.0 

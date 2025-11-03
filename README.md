@@ -61,7 +61,7 @@ source ~/.bashrc
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ESP-Align.git
+git clone https://github.com/Sasas-Lss/ESP-Align.git
 cd ESP-Align
 ````
 

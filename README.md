@@ -116,8 +116,8 @@ python esp_align/ESP_Align.py \
 
 ```bash
 python esp_align/ESP_Align.py \
-    -i examples/Case_Studies/UDG-like/UDG_TDG.fasta \
-    -o results/Case_Studies/UDG-like/ \
+    -i ./examples/Case_Studies/UDG-like/UDG_TDG.fasta \
+    -o ./results/Case_Studies/UDG-like/ \
     --pearson_weight 0.8 \
     --Helix -5.0 
 ```
@@ -145,9 +145,9 @@ python esp_align/ESP_Align_tree.py \
 
 ```bash
 python esp_align/ESP_Align_tree.py \
-    -i examples/Tree_Construction/20_protein_sequences.fasta \
-    -p examples/Tree_Construction/Structure \
-    -o results/similarity_tree.nwk
+    -i ./examples/Tree_Construction/20_protein_sequences.fasta \
+    -p ./examples/Tree_Construction/Structure \
+    -o ./results/similarity_tree.nwk
 ```
 
 > In this example, no PDB files are provided, so ESP‑Align will use ESMFold predictions to generate the similarity-derived tree.
